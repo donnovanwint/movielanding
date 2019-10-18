@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
+
+.header {
+  height: auto;
+}
+
+.header nav {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .header nav {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.video-cta {
+  height: auto;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    height: 726px;
+  }
+
+  .vide-cta {
+    height: 582px;
+  }
+}
+
+.btn {
+  @apply px-10 py-3 my-2 inline-block rounded;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.btn-primary {
+  @apply bg-brand text-white;
+}
+
+.btn-primary:hover {
+  @apply text-brand bg-white;
+}
+
 @tailwind utilities;
